@@ -18,20 +18,23 @@ The feature requests should be submitted to the repo [https://github.com/ONLYOFF
     git clone https://github.com/ONLYOFFICE/docker-onlyoffice-nextcloud
     cd docker-onlyoffice-nextcloud
     ```
+2. Change JWT_SECRET in:
+   2.1. docker-compose.yml
+   2.2. set_configuration.sh
 
-2. Run Docker Compose:
+3. Run Docker Compose:
 
     **Please note**: the action must be performed with **root** rights.
 
     ```
-    docker-compose up -d
+    docker compose up -d
     ```
 
     **Please note**: you might need to wait a couple of minutes when all the containers are up and running after the above command.
 
-3. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
+4. Now launch the browser and enter the webserver address. The Nextcloud wizard webpage will be opened. Enter all the necessary data to complete the wizard.
 
-4. Go to the project folder and run the `set_configuration.sh` script:
+5. Go to the project folder and run the `set_configuration.sh` script:
 
     **Please note**: the action must be performed with **root** rights.
 
